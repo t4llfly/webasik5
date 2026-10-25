@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment5</title>
+    <style>
+        .highlight {
+            background-color: #ffeb3b;
+            border-color: #f57f17;
+            outline: 2px solid #f57f17;
+        }
+    </style>
+</head>
+<body>
+    <h1>assignment5</h1>
+    <p>vladimir konovalov mt-2503</p>
+
+    <section>
+        <h2>Task 6</h2>
+        <p>Current Count: <strong id="counterValue">0</strong></p>
+        <button type="button" id="decreaseBtn">Decrease (-1)</button>
+        <button type="button" id="resetBtn">Reset (0)</button>
+        <button type="button" id="increaseBtn">Increase (+1)</button>
+    </section>
+
+    <section>
+        <h2>Task 7</h2>
+        <div>
+            <label for="textInput">Enter your text:</label><br>
+            <textarea id="textInput" rows="4" cols="40" placeholder="Type text here..."></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="button" id="clearBtn">Clear</button>
+            <span id="charCount">Characters: 0</span>
+        </div>
+        <h3>Live Preview:</h3>
+        <p id="previewOutput">Your text will appear here</p>
+    </section>
+
+    <section>
+        <h2>Task 8</h2>
+        <div>
+            <label for="imageSelect">Select an option:</label>
+            <select id="imageSelect">
+                <option value="sad" selected>Sad</option>
+                <option value="kobo">Kobo</option>
+                <option value="weak">Weak</option>
+            </select>
+        </div>
+        <br>
+        <figure>
+            <img id="displayImage" src="images/image1.jpg" alt="sad brochacho" width="150" height="150">
+            <figcaption id="imageCaption">idk thats funny</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>Task 9</h2>
+        <form id="keyForm">
+            <label for="keyboardInput">Type here (press Enter to submit, Escape to clear):</label><br>
+            <input type="text" id="keyboardInput" size="40">
+        </form>
+        <p>Last key pressed: <strong id="keyDisplay">None</strong></p>
+        <p>Committed Result: <span id="committedResult">[Awaiting input]</span></p>
+    </section>
+
+    <section>
+        <h2>Task 10</h2>
+        <p>Instruction: <strong id="instructionText">Hover mouse over card or press Tab to focus.</strong></p>
+        <p>Event triggered: <span id="eventSource">None</span></p>
+
+        <div id="interactiveCard" tabindex="0" style="border: 2px solid #999; padding: 15px; width: 300px;">
+            <h3>Interactive Card</h3>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
